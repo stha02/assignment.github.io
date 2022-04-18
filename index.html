@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Module 4 Solution Starter</title>
+    <script>
+      var names = []; // DO NOT REMOVE
+    </script>
+    <script src="SpeakHello.js"></script>
+    <script src="SpeakGoodBye.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="ball" id="ballID">
+      <h1>Module 4 Solution Starter</h1>
+      <p><strong>Hint:</strong> please when you open the demo do the following in order to see the results</p>
+      <p><strong>Right-click->inspect->then navigate to the console tab</strong></p>
+      <p><strong>OR</strong> click:shift+ctrl+J->then navigate to the console tab (<strong>For windows only</strong>)</p>
+      <p>Click:Cmd+opt+J (<strong>For MACOS only</strong>)</p>
+
+    </div>
+  </body>
+
+  <style>
+    body {
+      background-color: #f9f4f4;
+    }
+    h1{
+        text-align: center;
+        color: #6d6875;
+    }
+    p{
+        color: #000000;
+    }
+    div{
+        background-color: #ffffff;
+        width: 600px;
+        height: 200px;
+        border:8px solid #dec3c3 ;
+        box-shadow: 8px 8px 8px #fec8c1;
+    }
+  </style>
+
+  <script>
+    let ball = document.getElementById("ballID");
+
+    var myVar = setInterval(spostaDiv, 90);
+    var margin = 0;
+
+    let l = window.screen.width;
+    let w = 500;
+
+    function spostaDiv() {
+      if (margin == w) {
+        margin = 0 + "px";
+      } else {
+        ball.style.marginLeft = margin + "px";
+      }
+      margin += 2;
+    }
+  </script>
+</html>
